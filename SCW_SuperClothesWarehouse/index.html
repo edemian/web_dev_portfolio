@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <!-- Eglal Demian -->
- 
 <html lang="en">
 
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Super Clothes Warehouse</title>
+<title>Super Clothes Warehouse - Home</title>
 
 <link rel="stylesheet" href="styles.css">
 
@@ -15,91 +13,127 @@
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <script src="site.js" defer></script>
-
 </head>
 
 <body>
 
-<header class="site-header">
+<header class="store-header">
+    <div class="logo-section">
 
-<div id="dateTime" class="datetime"></div>
+        <img
+          src="Images/Logo.gif"
+          alt="Super Clothes Warehouse Logo"
+          class="header-logo">
 
-<img src="Images/Logo.gif"
-     alt="Super Clothes Warehouse Logo"
-     class="logo">
+        <p>Women's Fashion</p>
 
-<div class="header-text">
+    </div>
 
-<h1>Super Clothes Warehouse</h1>
+    <div class="header-center">
+      <h2>Super Clothes Warehouse</h2>
+      <p>
+        Quality Women's Fashion • Great Prices • Fast Shipping
+      </p>
+       <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+    </div>
 
-<p>
-Quality Women's Fashion • Great Prices • Fast Shipping
-</p>
-
-</div>
+    <div class="cart-section">
+        🛍️
+        <span class="cart-count">2</span>
+    </div>
 
 </header>
 
-<nav class="menu">
+<section class="featured-section">
 
-<h2>Shop Women's Clothing</h2>
+    <div class="featured-image">
 
-<button onclick="execButton637(product1)">
-Women's Tops
-</button>
+        <img
+            src="Images/White_Dress.png"
+            alt="White Dress Collection">
 
-<button onclick="execButton637(product2)">
-Women's Dresses
-</button>
+    </div>
 
-<button onclick="execButton637(product3)">
-Women's Jackets
-</button>
+    <div class="featured-text">
 
-<button onclick="execButton637(product4)">
-Women's Jeans
-</button>
+        <div class="hero-title-row">
+            <div class="hero-line"></div>
+            <h2>
+                Your New
+            </h2>
 
-<button onclick="execButton637(product5)">
-Summer Dresses
-</button>
+        </div>
 
-<button onclick="dealClothingDeals()">
-Show Deals
-</button>
+        <h2 class="hero-second-line">
+            Everyday Style
+        </h2>
 
-<button onclick="revealNextDeal()">
-Reveal Next Deal
-</button>
+        <p>
+            Super Clothes Warehouse is your destination for stylish and comfortable clothing for every occasion.
+        </p>
 
-<button onclick="resetGame441()">
-Reset
-</button>
+        <p class="read-more">
+            Read More
+        </p>
 
-<button onclick="popupAd770()">
-Popup Ad
-</button>
 
-<button onclick="closeAd770()">
-Close Ad
-</button>
 
-<button onclick="showCustomerForm()">
-Customer Form
-</button>
+        <div class="hero-buttons">
 
-</nav>
+            <a href="products.html"
+                class="hero-button">
+                Explore More
+            </a>
 
-<main id="main742"></main>
+            <a href="products.html"
+                class="hero-arrow">
+                 ►
+            </a>
+        </div>
+    </div>
+
+</section>
+
+<section class="collection-section">
+
+    <h2>New Collection</h2>
+
+    <p>
+        Discover the newest arrivals for 2026
+    </p>
+
+    <div class="collection-box">
+
+        <button class="collection-arrow">
+            ❮
+        </button>
+
+        <img
+            src="Images/Group1.webp"
+            alt="New Collection"
+            class="collection-image">
+
+        <button class="language-btn">
+            ENG ▼
+        </button>
+
+    </div>
+
+</section>
 
 <footer>
 
 <div class="footer-contact">
-
 Super Clothes Warehouse •
 344 Main St. Valencia, CA 91344 •
 (555) 701-1234
-
 </div>
 
 <div class="footer-social">
@@ -122,10 +156,8 @@ Instagram
 </div>
 
 <div class="footer-copy">
-
 © 2026 Super Clothes Warehouse.
 All rights reserved.
-
 </div>
 
 </footer>
