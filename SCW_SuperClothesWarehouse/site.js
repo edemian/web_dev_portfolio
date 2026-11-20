@@ -464,45 +464,6 @@ function closeAd770()
 // CUSTOMER FORM
 // ======================================
 
-function showCustomerForm() {
-    document.getElementById("main742").innerHTML = `
-
-<h2>Customer Information</h2>
-
-<form
-name="customerform"
-onsubmit="return checkForm502()">
-
-<label>First Name</label>
-<input type="text" name="firstname">
-
-<label>Last Name</label>
-<input type="text" name="lastname">
-
-<label>Address</label>
-<input type="text" name="address">
-
-<label>City</label>
-<input type="text" name="city">
-
-<label>State</label>
-<input type="text" name="state">
-
-<label>Zip Code</label>
-<input type="text" name="zip">
-
-<label>Email Address</label>
-<input type="email" name="emailaddr">
-
-<br><br>
-
-<input type="submit" value="Submit">
-
-</form>
-
-`;
-}
-
 
 // ======================================
 // FORM VALIDATION
@@ -575,12 +536,17 @@ window.onload = function()
 
 document.addEventListener("DOMContentLoaded", function()
 {
-    document.getElementById("adOverlay")
-    .addEventListener("click", function(e)
+    const overlay =
+        document.getElementById("adOverlay");
+
+    if (overlay)
     {
-        if(e.target === this)
+        overlay.addEventListener("click", function(e)
         {
-            closeAd770();
-        }
-    });
+            if (e.target === this)
+            {
+                closeAd770();
+            }
+        });
+    }
 });
